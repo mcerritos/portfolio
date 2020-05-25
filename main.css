@@ -1,8 +1,9 @@
 body {
     background-image: url("pstar.jpg");
     background-repeat: no-repeat;
-    background-color: darkgray;
+    background-color: rgb(66, 9, 66);
     background-size: cover;
+    font-family: 'Old Standard TT', serif;
 }
 
 .main {
@@ -24,6 +25,7 @@ body {
     left: 0;
     background-color: #111; 
     overflow-x: hidden; 
+    border-right: solid thin #ECA72C;;
 
   }
   
@@ -39,7 +41,7 @@ body {
   }
   
   .vertical-menu span:hover {
-    color: purple;
+    color: rgb(108, 39, 148);
   }
   
   .bottomnav {
@@ -50,6 +52,9 @@ body {
 h1 {
     color: whitesmoke;
     font-size: 5vw;
+    letter-spacing: .3vw;
+    text-decoration:underline #AC75D8;
+    margin-bottom: 1vh;
 }
 
 h2 {
@@ -59,16 +64,43 @@ h2 {
     margin-bottom: 1vh;
 }
 
-#subtitle1 {
-    margin-left: 4vw ;
+.heading {
+    text-decoration:underline #AC75D8;
 }
 
-#subtitle2 {
-    margin-left: 8vw ;
+.section {
+    height: 90vh;
+}
+#greeting, #skills {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-top: 5vh;
+    margin-right: 5vw;
+   
 }
 
-#subtitle3 {
-    margin-left: 12vw ;
+#skills {
+    padding: 2vh;
+    background-color:rgba(0, 0, 0, 0.4);
+}
+
+#about, #projects, #contact {
+    margin-top: 2vh;
+    padding: 2vh;
+    margin-left: 3vw;
+    max-width: 50%;
+    background-color:rgba(0, 0, 0, 0.4);
+}
+
+h3 {
+    color: whitesmoke; 
+    font-size: 1.5vw;
+}
+
+#skills > h3 {
+    max-width: 50vw;
+    text-align: right;
 }
 
 
