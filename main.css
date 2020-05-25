@@ -95,7 +95,7 @@ h2 {
 }
 
 #about, #projects, #contact {
-    margin-top: 3vh;
+    margin-top: 2vh;
     padding: 3vh;
     margin-left: 3vw;
     max-width: 60%;
@@ -103,7 +103,7 @@ h2 {
 }
 
 #projects {
-    max-width: 80%;
+    max-width: 90%;
 }
 
 h3 {
