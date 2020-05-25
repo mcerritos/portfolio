@@ -26,7 +26,7 @@ body {
     left: 0;
     background-color: #111; 
     overflow-x: hidden; 
-    border-right: solid thin #ECA72C;;
+    border-right: solid thin #ECA72C;
 
   }
   
@@ -127,6 +127,19 @@ h3 {
     color: #AC75D8;
 }
 
+#firstcontact {
+    color: #ECA72C;
+    margin-top: 3vw;
+    margin-right: 10vw;
+    padding: 1vw;
+    border: solid #ECA72C;
+    letter-spacing: .5rem;
+}
+
+#firstcontact:hover {
+    background-color: #AC75D8;
+    color:whitesmoke;
+}
 
 
 
