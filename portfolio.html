@@ -4,20 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Melody Cerritos</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <script src="https://kit.fontawesome.com/007851bd88.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css2?family=Old+Standard+TT&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="main.css">
+    <script src="contactme.php"></script>
 </head>
 <body>
     <div class="vertical-menu">
-        <a href="#" class="active"><span class="fas fa-music"></span></a>
+        <a href="#" class="active"><span id="melody" class="fas fa-music"></span></a>
 
         <div class="centernav">
             <a href="#greeting"><span class="fas fa-home"></span></a>
             <a href="#about"><span class="fas fa-address-card"></span></a>
             <a href="#skills"><span class="fas fa-laptop-code"></span></a>
             <a href="#projects"><span class="fas fa-code-branch"></span></a>
-            <a href="#contact"><span class="fas fa-envelope-open-text"></span></a>
+            <a href="#" data-toggle="modal" data-target="#contactModal"> <span class="fas fa-envelope-open-text"></span></a>
         </div>
 
         <div class="bottomnav">
@@ -32,7 +34,7 @@
             <h2 id="subtitle1" class="text-shadow-pop-top">Fullstack Web Developer, </h2>
             <h2 id="subtitle2" class="text-shadow-pop-top">Database Architect,  </h2>
             <h2 id="subtitle3" class="text-shadow-pop-top"> and much more. </h2>
-            <button>Contact Me</button>
+            <button data-toggle="modal" data-target="#contactModal">Contact Me</button>
         </div>
 
 
@@ -58,23 +60,116 @@
             
         </div>
 
-        <div id="projects" class="section">
+        <div id="projects" class="section container">
             <h2 class="heading">Projects</h2>
-            <h2 id="subtitle1" class="text-shadow-pop-top">Fullstack Web Developer, </h2>
-            <h2 id="subtitle2" class="text-shadow-pop-top">Database Architect,  </h2>
-            <h2 id="subtitle3" class="text-shadow-pop-top"> and much more. </h2>
-            <button>Contact Me</button>
+            <div class="row">
+
+                <div class="col-md-4">
+                  <div class="card">
+                    <img src="mushroomcollector.png" class="card-img-top">
+                    <div class="card-body">
+                      <h5 class="card-title">Mushroom Collector</h5>
+                      <p class="card-text">Mushroom Collector is a game that allows users to search though a wide range of arboreal backgrounds in search of mushrooms and other wild plants. </p>
+                      
+                      <p class="card-text"> Mushroom Collector was developed using HTML, CSS and Javascript to create a soothing, natural experience for users. </p>
+                    </div>
+
+                    <div class="card-footer text-muted">
+                        <a href="https://github.com/mcerritos/mushroom-collector" class="btn button">Visit Mushroom Collector</a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-md-4">
+                  <div class="card">
+                    <img src="tp.png" class="card-img-top" alt="An image of the front page of Tripper, a website.">
+                    <div class="card-body">
+                      <h5 class="card-title">Tripper</h5>
+                      <p class="card-text">Tripper is a tool to help people plan upcoming trips. It allows them to view attractions near the location of their trip, associate those attractions with their trip, set a budget, and more. </p>
+
+                      <p class="card-text"> Tripper was created using Bootstrap, Django, and PSQL by a team of three engineers: Melody Cerritos, Mert Nacakgedigi, and Elizabeth Patton.</p>
+                    </div>
+
+                    <div class="card-footer text-muted">
+                        <a href="https://trippermlm.herokuapp.com/" class="btn button" >Visit Tripper</a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card">
+                      <img src="wrld.png" class="card-img-top" alt="An image of the front page of Worldbuilder Wiki, a website.">
+                      <div class="card-body">
+                        <h5 class="card-title">Worldbuilder</h5>
+                        <p class="card-text">Worldbuilder is a tool for writers, dungeon masters, and anyone looking to keep track of a world of their own creation. A world is a wide, complicated thing to keep track of, and Worldbuilder allows for easy data storage, as well as providing questions and links to aspiring creators to help keep the inspiration flowing.</p>
+
+                      <p class="card-text">Worldbuilder was built using Javascript, Django, UIkit, Python, and Javascript. It runs on a PostgreSQL server.</p>
+                      </div>
+
+                      <div class="card-footer text-muted">
+                        <a href="https://worldbuilderwiki.herokuapp.com/" class="btn button">Visit Worldbuilder</a>
+                      </div>
+                    </div>
+                  </div>
+
+            </div>
         </div>
 
-        <div id="contact" class="section">
-            <h2 class="heading">Contact</h2>
-            <h2 id="subtitle1" class="text-shadow-pop-top">Fullstack Web Developer, </h2>
-            <h2 id="subtitle2" class="text-shadow-pop-top">Database Architect,  </h2>
-            <h2 id="subtitle3" class="text-shadow-pop-top"> and much more. </h2>
-            <button>Contact Me</button>
+        <!-- Modal -->
+        <div class="modal fade" id="contactModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Contact me</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+
+                <div class="modal-body">
+                    <form action="/contactme.php" method="post" >
+                        <div class="form-row">
+                            <div class="form-group col-md-6">
+                                <div class="form-group">
+                                    <label for="name">Name</label>
+                                    <input type="text" class="form-control" id="name" name="name">
+                                </div>
+                            </div>
+
+                            <div class="form-group col-md-6">
+                                <div class="form-group">
+                                <label for="email">Email address</label>
+                                <input type="email" class="form-control" id="email"name="email" aria-describedby="emailHelp">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <input type="text" class="form-control" id="subject" name="subject">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea rows="4" cols="50" class="form-control" id="message" name="message"></textarea>
+                        </div>
+
+                        <div class="modal-footer">
+                            <button type="submit" class="btn button">Submit</button>
+                        </div>
+                    </form>
+                </div>
+                
+                    <button type="button" class="btn button" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+            </div>
         </div>
 
     </div>
        
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
 </body>
 </html>
