@@ -1,0 +1,77 @@
+body {
+    background-image: url("pstar.jpg");
+    background-repeat: no-repeat;
+    background-color: darkgray;
+    background-size: cover;
+}
+
+.main {
+    margin-left: 5vw; 
+    padding: 0px 10px;
+  }
+
+.vertical-menu {
+    height: 100%;
+    width: 5vw; 
+    position: fixed; 
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    z-index: 1; 
+    top: 0; 
+    left: 0;
+    background-color: #111; 
+    overflow-x: hidden; 
+
+  }
+  
+  .vertical-menu a {
+    display: block;  
+    text-decoration: none; 
+  }
+
+  .vertical-menu span {
+    color: whitesmoke; 
+    font-size: x-large;
+    margin: 1.5vh 2vw;
+  }
+  
+  .vertical-menu span:hover {
+    color: purple;
+  }
+  
+  .bottomnav {
+      margin-bottom: 3vw;
+  }
+
+/* front page styles */
+h1 {
+    color: whitesmoke;
+    font-size: 5vw;
+}
+
+h2 {
+    color: whitesmoke;
+    font-size: 3vw;
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+}
+
+#subtitle1 {
+    margin-left: 4vw ;
+}
+
+#subtitle2 {
+    margin-left: 8vw ;
+}
+
+#subtitle3 {
+    margin-left: 12vw ;
+}
+
+
+
+
+  
