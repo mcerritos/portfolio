@@ -106,6 +106,10 @@ h2 {
     max-width: 90%;
 }
 
+#contact {
+    height: 40vh;
+}
+
 h3 {
     color: whitesmoke; 
     font-size: 1.5vw;
@@ -139,6 +143,23 @@ h3 {
 #firstcontact:hover {
     background-color: #AC75D8;
     color:whitesmoke;
+}
+
+#resumeImg {
+    object-fit: contain;
+    max-height: 80vh;
+    width: auto;
+    border: thin #ECA72C;
+    margin: 0 auto;
+}
+
+.link{
+    text-decoration: underline #ECA72C !important;
+}
+
+#resumeBody {
+    display: flex;
+    flex-direction: column;
 }
 
 
