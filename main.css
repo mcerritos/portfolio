@@ -6,6 +6,45 @@ body {
     font-family: 'Old Standard TT', serif;
 }
 /* ********************* breakpoint ********************** */
+@media only screen and (min-width: 991px){
+    .vertical-menu {
+        height: 100%;
+        /* width: 5vw;  */
+        position: fixed; 
+    
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    
+        z-index: 1; 
+        top: 0; 
+        left: 0;
+        background-color: #111; 
+        overflow-x: hidden; 
+        border-right: solid thin #ECA72C;
+      }
+
+      .vertical-menu a {
+        display: block;  
+        text-decoration: none; 
+      }
+    
+      .vertical-menu span {
+        color: whitesmoke; 
+        font-size: x-large;
+        margin: 1.5vh 2vw;
+      }
+      
+      .vertical-menu span:hover {
+        color: rgb(108, 39, 148);
+      }
+    }
+
+    @media only screen and (max-width: 990px){
+        .vertical-menu{
+            display: none;
+        }
+    }
 
 
 
@@ -13,39 +52,8 @@ body {
 .main {
     margin-left: 5vw; 
     padding: 0px 10px;
-  }
-
-.vertical-menu {
-    height: 100%;
-    /* width: 5vw;  */
-    position: fixed; 
-
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-
-    z-index: 1; 
-    top: 0; 
-    left: 0;
-    background-color: #111; 
-    overflow-x: hidden; 
-    border-right: solid thin #ECA72C;
-
-  }
-  
-  .vertical-menu a {
-    display: block;  
-    text-decoration: none; 
-  }
-
-  .vertical-menu span {
-    color: whitesmoke; 
-    font-size: x-large;
-    margin: 1.5vh 2vw;
-  }
-  
-  .vertical-menu span:hover {
-    color: rgb(108, 39, 148);
   }
 
   .centernav {
@@ -141,6 +149,12 @@ h3 {
     color: #AC75D8;
 }
 
+.link{
+    text-decoration: underline #ECA72C !important;
+}
+
+/* this is the first contact button */
+
 #firstcontact {
     color: #ECA72C;
     margin-top: 3vw;
@@ -163,12 +177,13 @@ h3 {
     margin: 0 auto;
 }
 
-.link{
-    text-decoration: underline #ECA72C !important;
-}
-
 #resumeBody {
     display: flex;
     flex-direction: column;
+}
+
+#navToggler {
+    border: solid #ECA72C;
+    color: #AC75D8;
 }
   
