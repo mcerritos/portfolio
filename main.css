@@ -5,6 +5,13 @@ body {
     background-size: cover;
     font-family: 'Old Standard TT', serif;
 }
+/* ********************* breakpoint ********************** */
+
+@include media-breakpoint-down(md) {
+  .custom-class {
+    display: block;
+  }
+}
 
 /* ********************* nav styles ********************** */
 .main {
@@ -67,7 +74,7 @@ h1 {
 
 h2 {
     color: whitesmoke;
-    font-size: 3vw;
+    font-size: xx-large;
     margin-top: 1vh;
     margin-bottom: 1vh;
 }
@@ -112,7 +119,7 @@ h2 {
 
 h3 {
     color: whitesmoke; 
-    font-size: 1.5vw;
+    font-size: x-large;
     margin-top: 2vw;
 }
 
