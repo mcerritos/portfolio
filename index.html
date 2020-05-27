@@ -10,10 +10,14 @@
     <link rel="stylesheet" type="text/css" href="main.css">
 </head>
 <body>
-    <div class="vertical-menu">
-        <a href="#" class="active"><span id="melody" class="fas fa-music"></span></a>
+    <nav class="vertical-menu navbar navbar-expand-lg">
+        <a href="#" class=".navbar-brand"><span id="melody" class="fas fa-music"></span></a>
 
-        <div class="centernav">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="centernav collapse navbar-collapse flex-column d-flex justify-content-center" id="navbarSupportedContent">
             <a href="#greeting"><span class="fas fa-home"></span></a>
             <a href="#about"><span class="fas fa-address-card"></span></a>
             <a href="#skills"><span class="fas fa-laptop-code"></span></a>
@@ -25,7 +29,7 @@
             <a href="https://github.com/mcerritos"><span class="fab fa-github"></span></a>
             <a href="https://www.linkedin.com/in/melody-cerritos/"><span class="fab fa-linkedin"></span></a>
         </div>
-    </div>
+    </nav>
 
     <div class="main">
         <div id="greeting" class="section">
@@ -64,19 +68,19 @@
             <div class="row">
 
                 <div class="col-md-4">
-                  <div class="card">
-                    <img src="mushroomcollector.png" class="card-img-top">
-                    <div class="card-body">
-                      <h5 class="card-title">Mushroom Collector</h5>
-                      <p class="card-text">Mushroom Collector is a game that allows users to search though a wide range of arboreal backgrounds in search of mushrooms and other wild plants. </p>
-                      
-                      <p class="card-text"> Mushroom Collector was developed using HTML, CSS and Javascript to create a soothing, natural experience for users. </p>
-                    </div>
+                    <div class="card">
+                        <img src="mushroomcollector.png" class="card-img-top">
+                        <div class="card-body">
+                        <h5 class="card-title">Mushroom Collector</h5>
+                        <p class="card-text">Mushroom Collector is a game that allows users to search though a wide range of arboreal backgrounds in search of mushrooms and other wild plants. </p>
+                        
+                        <p class="card-text"> Mushroom Collector was developed using HTML, CSS and Javascript to create a soothing, natural experience for users. </p>
+                        </div>
 
-                    <div class="card-footer text-muted">
-                        <a href="https://github.com/mcerritos/mushroom-collector" class="btn button">Visit Mushroom Collector</a>
+                        <div class="card-footer text-muted">
+                            <a href="https://github.com/mcerritos/mushroom-collector" class="btn button">Visit Mushroom Collector</a>
+                        </div>
                     </div>
-                  </div>
                 </div>
 
                 <div class="col-md-4">
