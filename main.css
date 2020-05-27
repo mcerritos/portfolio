@@ -6,43 +6,56 @@ body {
     font-family: 'Old Standard TT', serif;
 }
 /* ********************* breakpoint ********************** */
-@media only screen and (min-width: 991px){
-    .vertical-menu {
-        height: 100%;
-        /* width: 5vw;  */
-        position: fixed; 
-    
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-    
-        z-index: 1; 
-        top: 0; 
-        left: 0;
-        background-color: #111; 
-        overflow-x: hidden; 
-        border-right: solid thin #ECA72C;
-      }
+@media only screen and (min-width: 991px) {
+        .vertical-menu {
+            height: 100%;
+            position: fixed; 
+        
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        
+            z-index: 1; 
+            top: 0; 
+            left: 0;
+            background-color: #111; 
+            overflow-x: hidden; 
+            border-right: solid thin #ECA72C;
+        }
 
-      .vertical-menu a {
-        display: block;  
-        text-decoration: none; 
-      }
-    
-      .vertical-menu span {
-        color: whitesmoke; 
-        font-size: x-large;
-        margin: 1.5vh 2vw;
-      }
-      
-      .vertical-menu span:hover {
-        color: rgb(108, 39, 148);
-      }
+        .vertical-menu a {
+            display: block;  
+            text-decoration: none; 
+        }
+        
+        .vertical-menu span {
+            color: whitesmoke; 
+            font-size: x-large;
+            margin: 1.5vh 2vw;
+        }
+        
+        .vertical-menu span:hover {
+            color: rgb(108, 39, 148);
+        }
+
+        #about, #projects, #contact {
+            max-width: 60%;
+        }
+
+        #skills > h3 {
+            max-width: 50vw;
+            text-align: right;
+        }
     }
 
-    @media only screen and (max-width: 990px){
+    @media only screen and (max-width: 990px) {
         .vertical-menu{
             display: none;
+        }
+
+        #about, #projects, #contact, #skills {
+            max-width: 94%;
+            height: 100%;
         }
     }
 
@@ -116,12 +129,11 @@ h2 {
     margin-top: 2vh;
     padding: 3vh;
     margin-left: 3vw;
-    max-width: 60%;
     background-color:rgba(0, 0, 0, 0.4);
 }
 
 #projects {
-    max-width: 90%;
+    max-width: 94%;
 }
 
 #contact {
@@ -134,10 +146,6 @@ h3 {
     margin-top: 2vw;
 }
 
-#skills > h3 {
-    max-width: 50vw;
-    text-align: right;
-}
 
 .card {
     min-height: 70vh;
