@@ -134,6 +134,7 @@ h2 {
 
 #projects {
     max-width: 94%;
+    height: auto;
 }
 
 #contact {
@@ -148,7 +149,7 @@ h3 {
 
 
 .card {
-    min-height: 70vh;
+    min-height: 65vh;
     margin-top: 5vh;
 }
 
